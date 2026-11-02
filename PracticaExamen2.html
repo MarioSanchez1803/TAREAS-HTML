@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+
+
+
+
+<body>
+    <table border="2">
+        <caption>Recreacion tabla examen</caption>
+        <thead style="background-color: grey;">
+            <tr>
+                <th>Horario</th>
+                <th>Asignatura</th>
+                <th>Aula</th>
+                <th>Alumno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8:00-10:00</td>
+                <td colspan="2">Programación web</td>
+                <td>Carlos Gil</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10:00-12:00</td>
+                <td>Base de datos</td>
+                <td>Aula 2B</td>
+                <td>María Gómez</td>
+            </tr>
+            <tr>
+                <td>Sistemas Operativos</td>
+                <td>Aula 1A</td>
+                <td>Ana Torres</td>
+            </tr>
+            <tr>
+                <td>12:00-13:00</td>
+                <td colspan="3">Taller Práctico</td>
+            </tr>
+        </tbody>
+    </table>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<form action="" method="get">
+    <fieldset>
+        <legend>Formulario de Matrícula</legend>
+        <label for="Nombre">Nombre</label>
+            <input type="text" name="nombre" id="Nombre"><br>
+        <label for="Email">Email</label>
+            <input type="email" name="email" id="Email"><br>
+        <label for="Ciudad">Ciudad</label>
+            <select name="Ciudad" id="Ciudad">
+                <option value="MALAGA">MÁLAGA</option>
+                <option value="GRANADA">GRANADA</option>
+                <option value="SEVILLA">SEVILLA</option>
+                <option value="HUELVA">HUELVA</option>
+                <option value="CORDOBA">CÓRDOBA</option>
+                <option value="JAEN">JAÉN</option>
+                <option value="ALMERIA">ALMERÍA</option>
+                <option value="CADIZ">CÁDIZ</option>
+            </select><br>
+
+        <label for="Turno">Turno:</label>
+            <input type="radio" name="Turno" id="Turno" value="Mañana">Mañana
+            <input type="radio" name="Turno" id="Turno" value="Tarde">Tarde <br>
+        <label for="Opciones">Opciones:</label>
+            <input type="checkbox" name="Seguro Escolar" id="Opciones">Seguro Escolar <br>
+            <input type="checkbox" name="Recibir Notificaciones" id="Opciones">Recibir Notificaciones <br>
+        <label for="Comentario">Comentarios:</label><br>
+            <textarea name="comentarios" id="Comentario" cols="20" rows="5" placeholder="Deja tu comentario positivo"></textarea><br>
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="RESTABLECER">
+    </fieldset>
+
+
+</form>
+
+
+</body>
+</html>
